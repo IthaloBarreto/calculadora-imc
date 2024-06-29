@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="imc-calculator">
+        <div class="calculator-title">
+            Calculadora IMC
+        </div>
+        <div class="inputs">
+            <div class="input__peso">
+                <div class="peso__info">
+                    <label class="peso__name" for="peso">Peso:</label>
+                    <span class="peso__massa">0Kg</span>
+                </div>
+                <div class="slider">
+                    <input id="peso" type="range" min="0" max="150">
+                </div>
+                <div class="peso__min-max">
+                    <span>0Kg</span>
+                    <span>150Kg</span>
+                </div>
+            </div>
+
+            <div class="input__altura">
+                <div class="altura__info">
+                    <label class="altura__name" for="altura">Altura:</label>
+                    <span class="altura__metros">0m</span>
+                </div>
+                <div class="slider">
+                    <input id="altura" type="range" min="0" max="2.00" step="0.01">
+                </div>
+                <div class="altura__min-max">
+                    <span>0m</span>
+                    <span>2.10m</span>
+                </div>
+            </div>
+
+            <div class="botao">
+                <button>CALCULAR</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="resultado__calculo">
+        <div>
+            <p class="resultado__peso">PESO NORMAL</p>
+        </div>
+        <div class="border__bottom"></div>
+        <div class="imagem__ilustrativa">
+            <img src="./img/em_(2)-transformed.png" alt="">
+        </div>
+
+        <div class="imc">
+            <div class="result">
+                <div class="imc__titulo">Seu indíce de massa corporal é:</div>
+                <span class="imc__resultado">00.00 Kg/m²</span>
+            </div>
+            <div class="recomendado">
+                <div class="imc__titulo">Peso recomendado:</div>
+                <span class="imc__recomendado imc__resultado">00.00 Kg</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app/script.js" defer></script>
+    <script src="./app/slider.js" defer></script>
+</body>
+
+</html>
